@@ -4,7 +4,7 @@ num_pr= num
 num_dig = 0
 cont = 0
 #si es de dos digitos
-while num_pr != 0:
+while num_pr != 0 and num_pr != -1:
     num_pr = int(num_pr / 10)
     num_dig += 1
 

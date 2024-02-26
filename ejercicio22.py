@@ -2,9 +2,9 @@
 
 def num_dig(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
-        num = num // 10
+        num = int(num / 10)
     return dig
 
 num = 0

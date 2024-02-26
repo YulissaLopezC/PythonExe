@@ -4,7 +4,7 @@
 #funcion que determina se son de dos digitos 
 def two_digits(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
     
@@ -16,11 +16,12 @@ def two_digits(num):
 #funcion que determina la suma de los digitos
 def sum_dig(num):
     sum = 0
-    while num != 0:
-        ult_dig = int(num % 10) #el ultimo digito 3
+    while num != 0 and num != -1:
+        ult_dig = int(abs(num) % 10) #el ultimo digito 3
         sum += ult_dig
         num = int(num / 10)# 2
     return(sum)
+
 
 num_1 = 0
 num_2 = 0
@@ -36,7 +37,6 @@ while not(correct):
         print("Oopss Ingresa numeros de dos digitos BB")
 
 suma = sum_dig(num_1) + sum_dig(num_2)
-
 print(f'la suma de los digitos de {num_1} y los digitos de {num_2} es igual a {suma}')
 
 

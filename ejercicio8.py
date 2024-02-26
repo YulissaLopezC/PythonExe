@@ -10,7 +10,7 @@ while has_two_dig == False:
     num_cop = num
     dig = 0
     #contar el numero de digitos
-    while num_cop != 0:
+    while num_cop != 0 and num_cop != -1:
         dig += 1
         num_cop = int(num_cop / 10)
     
@@ -23,7 +23,7 @@ while has_two_dig == False:
 #separa y revisa si son primos
 while num != 0:
     #saco el ultimo digito
-    ult_dig= int(num % 10) #5
+    ult_dig= int(abs(num) % 10) #5
     #probar si es primo
     cont = 0
     for i in range(1, ult_dig + 1):

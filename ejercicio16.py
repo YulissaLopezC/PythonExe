@@ -3,10 +3,9 @@
 
 def num_digitos(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
-    
     return dig
 
 len = 3

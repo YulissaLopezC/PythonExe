@@ -1,7 +1,7 @@
 #Leer dos números enteros de dos dígitos y determinar si tienen dígitos comunes
 def two_digits(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
     

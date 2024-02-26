@@ -3,9 +3,10 @@
 
 def two_dig(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
+    return dig
     
     if dig == 2:
         return True
@@ -21,10 +22,10 @@ while not(two_dig(num)):
 sum = 0
 
 while num != 0:
-    ult_dig = int(num % 10)
+    ult_dig = int(abs(num) % 10)
     sum += ult_dig
     num = int(num / 10)
 
-print(f'la suma de los digitos de {num} es igual a {sum}')
+print(f'la suma de los digitos es igual a {sum}')
         
 

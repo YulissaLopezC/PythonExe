@@ -9,7 +9,7 @@ while has_two_dig == False:
     num_cop = num
     dig = 0
 
-    while num_cop != 0:
+    while num_cop != 0 and num_cop != -1:
         dig += 1
         num_cop = int(num_cop / 10)
 
@@ -17,8 +17,9 @@ while has_two_dig == False:
         has_two_dig = True
 
 #separar los digitos
-dig_1 = int(num / 10)
-dig_2 = int(num % 10)
+dig_1 = int(abs(num) / 10)
+print(dig_1)
+dig_2 = int(abs(num) % 10)
 
 if(dig_1 == dig_2):
     print("Ambos digitos son iguales")

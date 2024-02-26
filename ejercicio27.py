@@ -3,9 +3,9 @@ def num_dig(num):
     dig = 0
     if num == 0:
         dig = 1
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
-        num = num // 10
+        num = int(num / 10)
     return dig
 
 correcto = False
@@ -13,7 +13,7 @@ par = 0
 
 
 while not(correcto):
-    num = int(input("Ingrese un numero "))
+    num = abs(int(input("Ingrese un numero ")))
     if num_dig(num) == 4:
         correcto = True
 

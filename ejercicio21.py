@@ -3,14 +3,14 @@
 
 def num_dig(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
-        num = num // 10
+        num = int(num / 10)
     return dig
 
-num1 = int(input("Ingrese un numero "))
-num2 = int(input("Ingrese un numero "))
-num3 = int(input("Ingrese un numero "))
+num1 = abs(int(input("Ingrese un numero ")))
+num2 = abs(int(input("Ingrese un numero ")))
+num3 = abs(int(input("Ingrese un numero ")))
 may = 0
 pos = 0
 

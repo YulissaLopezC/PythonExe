@@ -4,7 +4,7 @@
 #funcion que dice si un numero tiene 2 digitos
 def two_digits(num):
     dig = 0
-    while num != 0:
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
     

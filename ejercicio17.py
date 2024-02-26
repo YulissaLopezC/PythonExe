@@ -1,14 +1,14 @@
 #Leer un número entero de tres dígitos y determinar en qué posición está el mayor dígito.
 def num_digitos(num):
     dig = 0
-    while num != 0:
+    
+    while num != 0 and num != -1:
         dig += 1
         num = int(num / 10)
-    
     return dig
 
 len = 3
-num = int(input("Ingrese un numero de 3 cifras "))
+num = abs(int(input("Ingrese un numero de 3 cifras ")))
 dig = num_digitos(num)
 
 while dig != len:
